@@ -1,0 +1,9 @@
+{% if recipelist %}
+    <ul>
+    {% for recipe in recipelist %}
+        <li>{{ recipe.name }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No recipes are available.</p>
+{% endif %}
